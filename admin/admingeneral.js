@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnLogs) {
     btnLogs.addEventListener("click", () => {
-      window.location.href = "logsl.html";
+      window.location.href = "src/logsl.html";
     });
   }
 
   if (btnRoles) {
     btnRoles.addEventListener("click", () => {
-      window.location.href = "rol.html";
+      window.location.href = "src/rol.html";
     });
   }
 });

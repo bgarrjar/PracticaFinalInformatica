@@ -30,11 +30,11 @@ document.querySelector("form").addEventListener("submit", function(event) {
         }
 
         else if (rol === "tecnico") {
-            window.location.href = "tecnico.html";
+            window.location.href = "tecnico/tecnico.html";
         }
 
         else if (rol === "admin") {
-            window.location.href = "admingeneral.html";
+            window.location.href = "admin/admingeneral.html";
         }
 
     } else {
