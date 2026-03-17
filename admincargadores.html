@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +11,43 @@
 
 <h1>Gestión de Cargadores</h1>
 
-<button>Añadir Cargador</button>
+<h2>Añadir Cargador</h2>
+
+<form>
+
+<label>Nombre:</label> <input type="text" id="nombre" required>
+
+<br><br>
+
+<label>Tipo:</label> <select id="tipo">
+
+<option value="Rápido">Rápido</option>
+<option value="Estándar">Estándar</option>
+<option value="Compatible">Compatible</option>
+</select>
+
+<br><br>
+
+<label>Estado:</label> <select id="estado">
+
+<option value="Libre">Libre</option>
+<option value="Ocupado">Ocupado</option>
+<option value="En reparación">En reparación</option>
+</select>
+
+<br><br>
+
+<label>Ubicación:</label> <input type="text" id="ubicacion" required>
+
+<br><br>
+
+<button type="submit">Añadir cargador</button>
+
+</form>
+
+<hr>
+
+<h2>Lista de cargadores</h2>
 
 <table border="1">
 
@@ -36,7 +73,7 @@
 <td>
 <button>Ver</button>
 <button>Editar</button>
-<button>Eliminar</button>
+<button class="eliminar">Eliminar</button>
 </td>
 </tr>
 
@@ -49,7 +86,7 @@
 <td>
 <button>Ver</button>
 <button>Editar</button>
-<button>Eliminar</button>
+<button class="eliminar">Eliminar</button>
 </td>
 </tr>
 
@@ -57,5 +94,8 @@
 
 </table>
 
+<script src="admincargadores.js"></script>
+
 </body>
 </html>
+
