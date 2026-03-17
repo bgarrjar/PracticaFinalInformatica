@@ -26,16 +26,31 @@
     <div class="modal" id="chargerModal">
         <div class="modal-content">
             <h2 id="chargerName"></h2>
-
+    
             <p><strong>Tipo:</strong> <span id="chargerType"></span></p>
             <p><strong>Estado:</strong> <span id="chargerStatus"></span></p>
             <p><strong>Nivel de batería:</strong> <span id="chargerBattery"></span></p>
             <p><strong>Tiempo estimado de carga:</strong> <span id="chargerTime"></span></p>
             <p><strong>Coste:</strong> <span id="chargerCost"></span></p>
-
+    
             <div class="modal-buttons">
-                <button class="reserve-btn" onclick="reservar()">Reservar</button>
+                <button class="reserve-btn" onclick="mostrarFormularioReserva()">Reservar</button>
+                <button class="incident-btn" onclick="irAIncidencia()">Notificar incidencia</button>
                 <button class="close-btn" onclick="cerrarModal()">Cerrar</button>
+            </div>
+    
+            <div class="reserve-form" id="reserveForm">
+                <h3>Selecciona fecha y hora</h3>
+    
+                <label for="reserveDate">Día:</label>
+                <input type="date" id="reserveDate">
+    
+                <label for="reserveTime">Hora:</label>
+                <input type="time" id="reserveTime">
+    
+                <div class="reserve-form-buttons">
+                    <button class="confirm-btn" onclick="confirmarReserva()">Confirmar reserva</button>
+                </div>
             </div>
         </div>
     </div>
@@ -111,5 +126,11 @@
         };
     </script>
 
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="map.js"></script>
+
 </body>
+
 </html>
+
