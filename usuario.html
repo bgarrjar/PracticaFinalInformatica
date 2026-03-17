@@ -66,11 +66,45 @@
         }
 
         // Crear mapa
-        const map = L.map("map").setView([40.4168, -3.7038], 13);
+        // Crear mapa sin centrar aún
+        const map = L.map("map");
 
+        // Cargar mapa base
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution: "© OpenStreetMap"
         }).addTo(map);
+
+
+        // Obtener ubicación del usuario
+        if (navigator.geolocation) {
+
+            navigator.geolocation.getCurrentPosition(function(position) {
+
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+
+                // Centrar mapa en el usuario
+                map.setView([lat, lng], 15);
+
+                // Añadir marcador del usuario
+                L.marker([lat, lng])
+                    .addTo(map)
+                    .bindPopup("Estás aquí")
+                    .openPopup();
+
+            }, function() {
+
+                // Si falla → Madrid por defecto
+                map.setView([40.4168, -3.7038], 13);
+
+            });
+
+        } else {
+
+            // Si el navegador no soporta geolocalización
+            map.setView([40.4168, -3.7038], 13);
+
+        }   
 
         // Variable para guardar el cargador seleccionado
         let cargadorSeleccionado = null;
