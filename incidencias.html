@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Reportar incidencia</title>
+</head>
+
+<body>
+
+<h1>Encuentra tu Cargador</h1>
+
+<button>Volver al mapa</button>
+
+<h2>Reportar incidencia</h2>
+
+<form>
+
+<label for="cargador">Cargador:</label><br>
+<input type="text" id="cargador" name="cargador"><br><br>
+
+<label for="fecha">Fecha y hora:</label><br>
+<input type="datetime-local" id="fecha" name="fecha"><br><br>
+
+<label for="descripcion">Descripción del problema:</label><br>
+<textarea id="descripcion" name="descripcion" rows="5" cols="40"></textarea><br><br>
+
+<label for="foto">Adjuntar foto:</label><br>
+<input type="file" id="foto" name="foto"><br><br>
+
+<button type="submit">Enviar incidencia</button>
+
+</form>
+
+<script src="incidencias.js"></script>
+
+</body>
+
+</html>
