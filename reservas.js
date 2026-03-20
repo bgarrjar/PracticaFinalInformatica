@@ -6,6 +6,16 @@ const usuarioTexto = document.querySelector("p");
 usuarioTexto.textContent = "Usuario: " + usuario;
 
 
+// BOTÓN VOLVER AL MAPA
+const btnMapa = document.getElementById("btnMapa");
+
+if (btnMapa) {
+    btnMapa.addEventListener("click", function() {
+        window.location.href = "usuario.html";
+    });
+}
+
+
 // Datos ficticios de reservas
 const reservas = [
     {
@@ -32,16 +42,48 @@ reservas.forEach(function(reserva) {
 
     const fila = document.createElement("tr");
 
-    fila.innerHTML = `
-        <td>${reserva.id}</td>
-        <td>${reserva.estado}</td>
-        <td>${reserva.fecha}</td>
-        <td>${reserva.cargador}</td>
-        <td>
-            ${reserva.estado === "Activa" ? "<button>Cancelar</button>" : "-"}
-        </td>
-    `;
+    // Crear columnas
+    const tdId = document.createElement("td");
+    tdId.textContent = reserva.id;
 
+    const tdEstado = document.createElement("td");
+    tdEstado.textContent = reserva.estado;
+
+    const tdFecha = document.createElement("td");
+    tdFecha.textContent = reserva.fecha;
+
+    const tdCargador = document.createElement("td");
+    tdCargador.textContent = reserva.cargador;
+
+    const tdAccion = document.createElement("td");
+
+    // Si la reserva está activa → botón cancelar
+    if (reserva.estado === "Activa") {
+
+        const btnCancelar = document.createElement("button");
+        btnCancelar.textContent = "Cancelar";
+
+        // Evento click para cancelar
+        btnCancelar.addEventListener("click", function() {
+            if (confirm("¿Seguro que quieres cancelar la reserva?")) {
+                fila.remove();
+            }
+        });
+
+        tdAccion.appendChild(btnCancelar);
+
+    } else {
+        tdAccion.textContent = "-";
+    }
+
+    // Añadir columnas a la fila
+    fila.appendChild(tdId);
+    fila.appendChild(tdEstado);
+    fila.appendChild(tdFecha);
+    fila.appendChild(tdCargador);
+    fila.appendChild(tdAccion);
+
+    // Añadir fila a la tabla
     tabla.appendChild(fila);
 
 });
