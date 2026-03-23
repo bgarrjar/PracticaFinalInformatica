@@ -1,0 +1,16 @@
+[
+    { "id": 1, "nombre": "Juan García", "email": "adminjuan@uax.es", "password": "123", "rol": "admin" },
+    
+    { "id": 2, "nombre": "Enrique Estilos", "email": "tecnico1@uax.es", "password": "123", "rol": "tecnico" },
+    { "id": 3, "nombre": "Juan Mendez", "email": "tecnico2@uax.es", "password": "123", "rol": "tecnico" },
+    { "id": 4, "nombre": "Justino Benítez", "email": "tecnico3@uax.es", "password": "123", "rol": "tecnico" },
+  
+    { "id": 5, "nombre": "Ada Edjang", "email": "ada@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 6, "nombre": "Lucia Abad", "email": "lucia@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 7, "nombre": "Victoria Villalobos", "email": "victoria@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 8, "nombre": "Beatriz Garrido", "email": "beatriz@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 9, "nombre": "Rania Benyaich", "email": "rania@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 10, "nombre": "Leo Seguín", "email": "leo@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 11, "nombre": "Belén Esteban", "email": "belen@uax.es", "password": "123", "rol": "usuario" },
+    { "id": 12, "nombre": "Abraham Mateo", "email": "abraham@uax.es", "password": "123", "rol": "usuario" }
+  ]

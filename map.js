@@ -1,13 +1,12 @@
 // Mostrar nombre del usuario que inició sesión
 const nombre = localStorage.getItem("nombre");
-const apellido = localStorage.getItem("apellido");
-
-if (nombre && apellido) {
-    document.getElementById("userName").innerText = nombre + " " + apellido;
+if (!nombre || rol !== "usuario") {
+    window.location.href = "login.html";
+} else {
+    document.getElementById("userName").innerText = "Hola, " + nombre;
 }
-
-// Crear el mapa centrado en Madrid
-const map = L.map("map").setView([40.4168, -3.7038], 13);
+// Crear el mapa centrado en Madrid,Chamberí
+const map = L.map("map").setView([40.4332, -3.7075], 15);
 
 // Cargar mapa de OpenStreetMap
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

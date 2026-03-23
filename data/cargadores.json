@@ -1,0 +1,22 @@
+[
+    { "id": "C01", "name": "Arapiles 8 - Parking", "lat": 40.4332, "lng": -3.7075, "type": "rápido", "status": "libre", "battery": 95, "time": 15, "cost": 0.45, "incidencias": [] },
+    { "id": "C02", "name": "Glorieta Quevedo", "lat": 40.4338, "lng": -3.7042, "type": "estándar", "status": "ocupado", "battery": 40, "time": 60, "cost": 0.30, "incidencias": [] },
+    { "id": "C03", "name": "San Bernardo 110", "lat": 40.4305, "lng": -3.7068, "type": "compatible", "status": "en reparación", "battery": 0, "time": 0, "cost": 0.25, "incidencias": ["Fallo en placa base"] },
+    { "id": "C04", "name": "Bravo Murillo - Canal", "lat": 40.4385, "lng": -3.7035, "type": "rápido", "status": "libre", "battery": 100, "time": 20, "cost": 0.55, "incidencias": [] },
+    { "id": "C05", "name": "Fuencarral - Bilbao", "lat": 40.4290, "lng": -3.7020, "type": "estándar", "status": "libre", "battery": 85, "time": 45, "cost": 0.32, "incidencias": [] },
+    { "id": "C06", "name": "Alberto Aguilera 20", "lat": 40.4300, "lng": -3.7110, "type": "rápido", "status": "ocupado", "battery": 15, "time": 40, "cost": 0.40, "incidencias": [] },
+    { "id": "C07", "name": "Calle Magallanes 3", "lat": 40.4355, "lng": -3.7060, "type": "estándar", "status": "libre", "battery": 70, "time": 50, "cost": 0.28, "incidencias": [] },
+    { "id": "C08", "name": "Vallehermoso - Islas", "lat": 40.4360, "lng": -3.7095, "type": "compatible", "status": "en reparación", "battery": 0, "time": 0, "cost": 0.20, "incidencias": ["Manguera obstruida"] },
+    { "id": "C09", "name": "Santa Engracia 50", "lat": 40.4390, "lng": -3.7010, "type": "rápido", "status": "libre", "battery": 90, "time": 25, "cost": 0.48, "incidencias": [] },
+    { "id": "C10", "name": "Plaza de Olavide", "lat": 40.4330, "lng": -3.7015, "type": "estándar", "status": "ocupado", "battery": 55, "time": 35, "cost": 0.35, "incidencias": [] },
+    { "id": "C11", "name": "Cea Bermúdez 12", "lat": 40.4410, "lng": -3.7100, "type": "rápido", "status": "libre", "battery": 80, "time": 30, "cost": 0.42, "incidencias": [] },
+    { "id": "C12", "name": "Eloy Gonzalo 25", "lat": 40.4350, "lng": -3.7000, "type": "estándar", "status": "libre", "battery": 100, "time": 55, "cost": 0.30, "incidencias": [] },
+    { "id": "C13", "name": "Carranza - San Mateo", "lat": 40.4285, "lng": -3.7055, "type": "compatible", "status": "ocupado", "battery": 10, "time": 80, "cost": 0.25, "incidencias": [] },
+    { "id": "C14", "name": "Gaztambide 15", "lat": 40.4345, "lng": -3.7150, "type": "rápido", "status": "libre", "battery": 95, "time": 20, "cost": 0.58, "incidencias": [] },
+    { "id": "C15", "name": "Fernández de los Ríos", "lat": 40.4365, "lng": -3.7120, "type": "estándar", "status": "en reparación", "battery": 0, "time": 0, "cost": 0.33, "incidencias": ["Error de red"] },
+    { "id": "C16", "name": "Galileo 60", "lat": 40.4380, "lng": -3.7135, "type": "rápido", "status": "libre", "battery": 100, "time": 15, "cost": 0.45, "incidencias": [] },
+    { "id": "C17", "name": "José Abascal 4", "lat": 40.4405, "lng": -3.7005, "type": "estándar", "status": "libre", "battery": 75, "time": 40, "cost": 0.35, "incidencias": [] },
+    { "id": "C18", "name": "Rodríguez San Pedro", "lat": 40.4315, "lng": -3.7105, "type": "compatible", "status": "ocupado", "battery": 30, "time": 50, "cost": 0.22, "incidencias": [] },
+    { "id": "C19", "name": "Zurbano 22", "lat": 40.4310, "lng": -3.6930, "type": "rápido", "status": "libre", "battery": 85, "time": 25, "cost": 0.47, "incidencias": [] },
+    { "id": "C20", "name": "Modesto Lafuente", "lat": 40.4380, "lng": -3.6980, "type": "estándar", "status": "libre", "battery": 90, "time": 45, "cost": 0.31, "incidencias": [] }
+  ]
